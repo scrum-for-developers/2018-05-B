@@ -11,7 +11,7 @@
 
     <groupId>de.codecentric.psd</groupId>
     <artifactId>worblehat</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.0-RELEASE</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -78,7 +78,7 @@
             <plugin>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-maven-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>3.6.1</version>
                 <configuration>
                     <logging>info</logging>
                     <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
