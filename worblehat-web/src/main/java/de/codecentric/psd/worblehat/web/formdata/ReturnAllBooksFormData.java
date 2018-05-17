@@ -17,7 +17,7 @@ public class ReturnAllBooksFormData {
 	}
 
 	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
+		this.emailAddress = emailAddress.trim();
 	}
 
 }
