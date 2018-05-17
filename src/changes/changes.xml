@@ -30,15 +30,9 @@
 			<action dev="till" type="update">
 				Update pom.xml.
 			</action>
-		</release>
-		<release version="1.2" date="2018-05-17"
-			description="Add Description Information for Books">
 			<action dev="christian" type="update">
 				Datenbank erweitert. Anzeige erweitert. Eingabe erweitert.
 			</action>
-		</release>
-		<release version="1.2" date="2018-05-17"
-			description="Error messages modified">
 			<action dev="hed" type="update">
 				Texte aktualisiert.
 			</action>
