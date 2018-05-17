@@ -70,8 +70,9 @@ public class StandardBookService implements BookService {
 									 @Nonnull String author,
 									 @Nonnull String edition,
 									 @Nonnull String isbn,
+									 String description,
 									 int yearOfPublication) {
-		Book book = new Book(title, author, edition, isbn, yearOfPublication);
+		Book book = new Book(title, author, edition, isbn, description, yearOfPublication);
 
 		Optional<Book> bookFromRepo = bookRepository.findTopByIsbn(isbn);
 
@@ -79,6 +80,11 @@ public class StandardBookService implements BookService {
             return Optional.of(bookRepository.save(book));
         } else
             return Optional.empty();
+	}
+	
+	@Override
+	public Optional<Book> createBook(String title, String author, String edition, String isbn, int yearOfPublication) {
+		return createBook(title, author, edition, isbn, null, yearOfPublication);
 	}
 
 	@Override
@@ -92,6 +98,5 @@ public class StandardBookService implements BookService {
 		borrowingRepository.deleteAll();
 		bookRepository.deleteAll();
 	}
-
 
 }
