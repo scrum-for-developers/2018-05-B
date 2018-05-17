@@ -24,5 +24,12 @@
 				Return all borrowed books by one member.
 			</action>
 		</release>
+
+		<release version="1.2" date="2018-05-17"
+			description="Update to Spring Version 1.5.13">
+			<action dev="till" type="update">
+				Update pom.xml.
+			</action>
+		</release>
 	</body>
 </document>
