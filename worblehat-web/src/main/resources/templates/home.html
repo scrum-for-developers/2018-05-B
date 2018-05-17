@@ -12,5 +12,10 @@
     <li><a th:href="@{/borrow}">Borrow Book</a></li>
     <li><a th:href="@{/returnAllBooks}">Return all Books</a></li>
 </ul>
+
+<br />
+<br />
+<br />
+<p><a>Version: </a><a><span th:text="${@environment.getProperty('info.version')}"></span></a></p>
 </body>
 </html>

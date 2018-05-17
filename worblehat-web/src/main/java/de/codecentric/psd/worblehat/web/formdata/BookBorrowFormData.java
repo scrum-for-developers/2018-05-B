@@ -19,10 +19,12 @@ public class BookBorrowFormData {
 
 	public String getIsbn() {
 		return isbn;
+		this.isbn.trim();
 	}
 
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
+		this.isbn.trim();
 	}
 
 	public String getEmail() {
