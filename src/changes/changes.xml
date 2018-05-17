@@ -32,6 +32,12 @@
 			</action>
 		</release>
 		<release version="1.2" date="2018-05-17"
+			description="Update to Liquibase 3.6.1">
+			<action dev="till" type="update">
+				Update pom.xml.
+			</action>
+		</release>
+		<release version="1.2" date="2018-05-17"
 			description="Add Description Information for Books">
 			<action dev="christian" type="update">
 				Datenbank erweitert. Anzeige erweitert. Eingabe erweitert.
