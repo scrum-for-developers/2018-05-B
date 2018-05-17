@@ -1,0 +1,16 @@
+-- Änderungen überprüfen:
+git status
+
+-- Registrieren der Änderungen:
+git add .
+
+-- Comitten:
+git commit -m "Nachricht"
+
+-- Synchronisieren mit Github:
+git pull
+
+-- Jetzt evtl. Merge-Konflikte bearbeiten
+
+-- Hochladen nach Github:
+git push
