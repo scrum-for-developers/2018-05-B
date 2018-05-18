@@ -16,12 +16,13 @@ And the library contains <copies> of the book with <isbn>
 
 Examples:
  
-| isbn       | author           | title     | edition   | year  | author2          | title2   | copies |
-| 0552131075 | Terry Pratchett  | Sourcery  | 1         | 1989  |                  |          |    1   |
-| 0552131075 | Terry Pratchett  | Sourcery  | 1         | 1989  | Terry Pratchett  | Sourcery |    2   |
-| 0552131075 | Terry Pratchett  | Sourcery  | 1         | 1989  | Jerry Pratchett  | Sourcery |    1   |
-| 0552131075 | Terry Pratchett  | Sourcery  | 1         | 1989  | Terry Pratchett  | Mastery  |    1   |
-| 9783492280624 | Terry Pratchett  | Witches  | 1         | 1989  |                |          |    1   |
+| isbn          | author           | title     | edition   | year  | author2          | title2   | copies |
+| 0552131075    | Terry Pratchett  | Sourcery  | 1         | 1989  |                  |          |    1   |
+| 0552131075    | Terry Pratchett  | Sourcery  | 1         | 1989  | Terry Pratchett  | Sourcery |    2   |
+| 0552131075    | Terry Pratchett  | Sourcery  | 1         | 1989  | Jerry Pratchett  | Sourcery |    1   |
+| 0552131075    | Terry Pratchett  | Sourcery  | 1         | 1989  | Terry Pratchett  | Mastery  |    1   |
+| 9783492280624 | Terry Pratchett  | Witches   | 1         | 1989  | Terry Pratchett  | Witches  |    2   |
+| 9783492285094 | Terry Pratchett  | Witches   | 2         | 1989  | Terry Pratchett  | Witches  |    2   |
 
 
 
