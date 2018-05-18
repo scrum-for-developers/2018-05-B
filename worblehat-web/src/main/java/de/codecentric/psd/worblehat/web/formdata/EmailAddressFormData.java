@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 /**
  * This class represent the form data of the return book form.
  */
-public class ReturnAllBooksFormData {
+public class EmailAddressFormData {
 
 	@NotEmpty(message = "{empty.returnAllBookFormData.emailAddress}") 
 	@Email(message = "{notvalid.returnAllBookFormData.emailAddress}")

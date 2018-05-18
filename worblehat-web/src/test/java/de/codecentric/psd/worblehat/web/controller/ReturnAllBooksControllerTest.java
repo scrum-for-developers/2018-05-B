@@ -3,7 +3,7 @@ package de.codecentric.psd.worblehat.web.controller;
 import java.util.HashMap;
 
 import de.codecentric.psd.worblehat.domain.BookService;
-import de.codecentric.psd.worblehat.web.formdata.ReturnAllBooksFormData;
+import de.codecentric.psd.worblehat.web.formdata.EmailAddressFormData;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.ui.ModelMap;
@@ -24,7 +24,7 @@ public class ReturnAllBooksControllerTest {
 
     private BookService bookService;
 
-    private ReturnAllBooksFormData returnAllBooksFormData;
+    private EmailAddressFormData returnAllBooksFormData;
 
     private BindingResult bindingResult;
 
@@ -32,7 +32,7 @@ public class ReturnAllBooksControllerTest {
     public void setUp() throws Exception {
         bookService = mock(BookService.class);
         returnAllBooksController = new ReturnAllBooksController(bookService);
-        returnAllBooksFormData = new ReturnAllBooksFormData();
+        returnAllBooksFormData = new EmailAddressFormData();
         bindingResult = new MapBindingResult(new HashMap<>(), "");
     }
 

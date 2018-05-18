@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Show Book List - Worblehat Bookmanager</title>
+</head>
+<body>
+	<h1>Show book list</h1>
+
+	<form th:object="${showBookFormData}" method="POST">
+		 Email Address:<input id="emailAddress" type="text" th:field="*{emailAddress}" />
+		<span th:if="${#fields.hasErrors('emailAddress')}" th:errors="*{emailAddress}"></span>
+		<br />
+		<input type="submit" id="showBorrowings" value="Show List" />
+	</form>
+	
+	<hr />
+	
+	<table class="bookList">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Year</th>
+			<th>Edition</th>
+			<th>ISBN</th>
+			<th>Description</th>
+			<th>Return date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="borrowing : ${borrowings}">
+			<td th:text="${borrowing.borrowedBook.title}">Harry Potter</td>
+			<td th:text="${borrowing.borrowedBook.author}">J.K. Rowling</td>
+			<td th:text="${borrowing.borrowedBook.yearOfPublication}">2002</td>
+			<td th:text="${borrowing.borrowedBook.edition}">1st</td>
+			<td th:text="${borrowing.borrowedBook.isbn}">123456</td>
+			<td th:text="${borrowing.borrowedBook?.description}">Description</td>
+			<td th:text="${borrowing.returnDate}">2015-01-01</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<hr />
+	<a th:href="@{/}">Back to Home</a>
+</body>
+</html>

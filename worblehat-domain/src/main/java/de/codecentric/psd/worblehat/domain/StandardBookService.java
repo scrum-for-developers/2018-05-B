@@ -99,4 +99,9 @@ public class StandardBookService implements BookService {
 		bookRepository.deleteAll();
 	}
 
+	@Override
+	public List<Borrowing> findBorrowedBooks(String emailAddress) {
+		return borrowingRepository.findBorrowingsByBorrower(emailAddress);
+	}
+
 }

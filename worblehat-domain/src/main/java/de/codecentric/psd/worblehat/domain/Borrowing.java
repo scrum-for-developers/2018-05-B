@@ -4,7 +4,11 @@ import org.joda.time.DateTime;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
 
 /**
  * Borrowing Entity
@@ -55,5 +59,13 @@ public class Borrowing implements Serializable {
 
 	public Book getBorrowedBook() {
 		return borrowedBook;
+	}
+	
+	public String getReturnDate() {
+		SimpleDateFormat format = new SimpleDateFormat("EE, yyyy-MM-dd", Locale.GERMAN);
+		Calendar calendar = GregorianCalendar.getInstance();
+		calendar.setTime(borrowDate);
+		calendar.add(Calendar.WEEK_OF_YEAR, 2);
+		return format.format(calendar.getTime());
 	}
 }
